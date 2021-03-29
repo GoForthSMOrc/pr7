@@ -1,4 +1,4 @@
-﻿namespace Practic5
+﻿namespace Practica7
 {
     partial class MainMenu
     {
@@ -28,121 +28,161 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.EnterNewArticle = new System.Windows.Forms.Button();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Sculpt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Material = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Size = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Master = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Hello = new System.Windows.Forms.Label();
             this.NewUser = new System.Windows.Forms.Button();
-            this.FindArticles = new System.Windows.Forms.Button();
-            this.Print = new System.Windows.Forms.Button();
+            this.ListButton = new System.Windows.Forms.Button();
+            this.NewSculpture = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.FindSculpt = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(399, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(355, 76);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Список статей";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2,
-            this.columnHeader3});
+            this.ID,
+            this.Sculpt,
+            this.Material,
+            this.Size,
+            this.Master});
+            this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, -1);
+            this.listView1.Location = new System.Drawing.Point(12, 159);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(393, 614);
-            this.listView1.TabIndex = 2;
+            this.listView1.Size = new System.Drawing.Size(360, 469);
+            this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // columnHeader2
+            // ID
             // 
-            this.columnHeader2.Text = "Статья";
-            this.columnHeader2.Width = 182;
+            this.ID.Text = "Номер";
             // 
-            // columnHeader3
+            // Sculpt
             // 
-            this.columnHeader3.Text = "Условия";
-            this.columnHeader3.Width = 205;
+            this.Sculpt.Text = "Скульптура";
+            this.Sculpt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Sculpt.Width = 84;
             // 
-            // EnterNewArticle
+            // Material
             // 
-            this.EnterNewArticle.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EnterNewArticle.Location = new System.Drawing.Point(399, 81);
-            this.EnterNewArticle.Name = "EnterNewArticle";
-            this.EnterNewArticle.Size = new System.Drawing.Size(355, 76);
-            this.EnterNewArticle.TabIndex = 3;
-            this.EnterNewArticle.Text = "Добавить новую статью";
-            this.EnterNewArticle.UseVisualStyleBackColor = true;
-            this.EnterNewArticle.Click += new System.EventHandler(this.EnterNewArticle_Click);
+            this.Material.Text = "Материал";
+            this.Material.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Material.Width = 92;
+            // 
+            // Size
+            // 
+            this.Size.Text = "Размер";
+            this.Size.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Master
+            // 
+            this.Master.Text = "Мастер";
+            this.Master.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Hello
+            // 
+            this.Hello.AutoSize = true;
+            this.Hello.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hello.Location = new System.Drawing.Point(179, 9);
+            this.Hello.Name = "Hello";
+            this.Hello.Size = new System.Drawing.Size(291, 40);
+            this.Hello.TabIndex = 1;
+            this.Hello.Text = "Добро пожаловать!";
             // 
             // NewUser
             // 
             this.NewUser.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NewUser.Location = new System.Drawing.Point(399, 524);
+            this.NewUser.Location = new System.Drawing.Point(132, 52);
             this.NewUser.Name = "NewUser";
-            this.NewUser.Size = new System.Drawing.Size(355, 76);
-            this.NewUser.TabIndex = 4;
+            this.NewUser.Size = new System.Drawing.Size(360, 51);
+            this.NewUser.TabIndex = 2;
             this.NewUser.Text = "Добавить нового пользователя";
             this.NewUser.UseVisualStyleBackColor = true;
             this.NewUser.Click += new System.EventHandler(this.NewUser_Click);
             // 
-            // FindArticles
+            // ListButton
             // 
-            this.FindArticles.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FindArticles.Location = new System.Drawing.Point(399, 163);
-            this.FindArticles.Name = "FindArticles";
-            this.FindArticles.Size = new System.Drawing.Size(355, 76);
-            this.FindArticles.TabIndex = 5;
-            this.FindArticles.Text = "Поиск статьи";
-            this.FindArticles.UseVisualStyleBackColor = true;
-            this.FindArticles.Click += new System.EventHandler(this.FindArticles_Click);
+            this.ListButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListButton.Location = new System.Drawing.Point(382, 159);
+            this.ListButton.Name = "ListButton";
+            this.ListButton.Size = new System.Drawing.Size(243, 49);
+            this.ListButton.TabIndex = 3;
+            this.ListButton.Text = "Обновить список работ";
+            this.ListButton.UseVisualStyleBackColor = true;
+            this.ListButton.Click += new System.EventHandler(this.ListButton_Click);
             // 
-            // Print
+            // NewSculpture
             // 
-            this.Print.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Print.Location = new System.Drawing.Point(399, 245);
-            this.Print.Name = "Print";
-            this.Print.Size = new System.Drawing.Size(355, 76);
-            this.Print.TabIndex = 6;
-            this.Print.Text = "Печать";
-            this.Print.UseVisualStyleBackColor = true;
-            this.Print.Click += new System.EventHandler(this.Print_Click);
+            this.NewSculpture.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewSculpture.Location = new System.Drawing.Point(382, 224);
+            this.NewSculpture.Name = "NewSculpture";
+            this.NewSculpture.Size = new System.Drawing.Size(243, 49);
+            this.NewSculpture.TabIndex = 4;
+            this.NewSculpture.Text = "Добавить новую запись";
+            this.NewSculpture.UseVisualStyleBackColor = true;
+            this.NewSculpture.Click += new System.EventHandler(this.NewSculpture_Click);
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DeleteButton.Location = new System.Drawing.Point(382, 290);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(243, 49);
+            this.DeleteButton.TabIndex = 5;
+            this.DeleteButton.Text = "Удалить запись";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // FindSculpt
+            // 
+            this.FindSculpt.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FindSculpt.Location = new System.Drawing.Point(382, 354);
+            this.FindSculpt.Name = "FindSculpt";
+            this.FindSculpt.Size = new System.Drawing.Size(243, 49);
+            this.FindSculpt.TabIndex = 6;
+            this.FindSculpt.Text = "Поиск записи";
+            this.FindSculpt.UseVisualStyleBackColor = true;
+            this.FindSculpt.Click += new System.EventHandler(this.FindSculpt_Click);
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 612);
-            this.Controls.Add(this.Print);
-            this.Controls.Add(this.FindArticles);
+            this.ClientSize = new System.Drawing.Size(637, 640);
+            this.Controls.Add(this.FindSculpt);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.NewSculpture);
+            this.Controls.Add(this.ListButton);
             this.Controls.Add(this.NewUser);
-            this.Controls.Add(this.EnterNewArticle);
+            this.Controls.Add(this.Hello);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button1);
-            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name = "MainMenu";
             this.Text = "MainMenu";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.Button EnterNewArticle;
+        private System.Windows.Forms.ColumnHeader ID;
+        private System.Windows.Forms.ColumnHeader Sculpt;
+        private System.Windows.Forms.ColumnHeader Material;
+        private System.Windows.Forms.ColumnHeader Size;
+        private System.Windows.Forms.ColumnHeader Master;
+        private System.Windows.Forms.Label Hello;
         private System.Windows.Forms.Button NewUser;
-        private System.Windows.Forms.Button FindArticles;
-        private System.Windows.Forms.Button Print;
+        private System.Windows.Forms.Button ListButton;
+        private System.Windows.Forms.Button NewSculpture;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button FindSculpt;
     }
 }
