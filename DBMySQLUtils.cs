@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace Practic5
+namespace Practica7
 {
     class DBMySQLUtils
     {
         public static MySqlConnection
-            GetDBConnection(string host, int port, string database,string username, string password)
+            GetDBConnection(string host, int port, string database, string username, string password)
         {
             String connString = "Server = " + host + "; Database = " + database + "; Port = " + port + "; User = " + username + "; Password = " + password;
             MySqlConnection conn = new MySqlConnection(connString);
